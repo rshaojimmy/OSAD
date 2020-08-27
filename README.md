@@ -4,13 +4,13 @@ Pytorch codes for Open-set Adversarial Defense <a href=https://www.ecva.net/pape
 
 Challenges in open-set recogntion and adversarial robustness. (a) Conventional CNN classiﬁers fail in the presence of both open-set and adversarial images. (b) Open-set recognition methods can successfully identify open-set samples, but fail on adversarial samples. (c) Adversarial defense methods are unable to identify open-set samples. (d) Proposed method can identify open-set images and it is robust to adversarial images.
 
-<img src="./models/motivation.png" width="800">
+<img src="./models/motivation.png" width="600">
 
 Thus this paper proposes a new research problem named Open-Set Adversarial Defense (OSAD) where adversarial attacks are studied under an open-set setting. We propose an Open-Set Defense Network (OSDN) that learns a latent feature space that is robust to adversarial attacks and informative to identify open-set samples.
 
 Network structure of the proposed Open-Set Defense Network (OSDN). It consists of four components: encoder, decoder, open-set classiﬁer and transformation classifier.
 
-<img src="./models/framework.png" width="800">
+<img src="./models/framework.png" width="600">
 
 # Setup
 
