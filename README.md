@@ -2,43 +2,45 @@
 
 Pytorch codes for Open-set Adversarial Defense <a href=https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123620664.pdf> (pdf) </a> in ECCV 2020 
 
-Network structure of the proposed Open-Set Defense Network (OSDN). It consists of four components: encoder, decoder, open-set classiﬁer and transformation
-classiﬁer.
+Challenges in open-set recogntion and adversarial robustness. (a) Conventional CNN classiﬁers fail in the presence of both open-set and adversarial images. (b) Open-set recognition methods can successfully identify open-set samples, but fail on adversarial samples. (c) Adversarial defense methods are unable to identify open-set samples. (d) Proposed method can identify open-set images and it is robust to adversarial images.
 
-<img src="./models/framework.png" width="500">
+<img src="./models/motivation.png" width="800">
 
-Overview of proposed framework. We simulate domain shift by randomly dividing original N source domains in each iteration. Supervision of domain knowledge is incorporated via depth estimator to regularize the learning process of feature extractor. Thus, meta learner conducts the meta-learning in the feature space regularized by the auxiliary supervision of domain knowledge. 
+Thus this paper proposes a new research problem named Open-Set Adversarial Defense (OSAD) where adversarial attacks are studied under an open-set setting. We propose an Open-Set Defense Network (OSDN) that learns a latent feature space that is robust to adversarial attacks and informative to identify open-set samples.
 
-<img src="./models/framework.png" width="600">
+Network structure of the proposed Open-Set Defense Network (OSDN). It consists of four components: encoder, decoder, open-set classiﬁer and transformation classifier.
+
+<img src="./models/framework.png" width="900">
 
 # Setup
 
-* Prerequisites: Python3.6, pytorch=0.4.0, Numpy, TensorboardX, Pillow, SciPy, h5py
+* Prerequisites: Python3.6, pytorch=1.2, Numpy, TensorboardX, Pillow, SciPy, h5py, libmr
 
 * The source code folders:
 
-  1. "models": Contains the network architectures suitable for high-order derivatives calculation of network parameters. Please note that FeatExtractor, DepthEstmator and FeatEmbedder in the code are feature extractor, depth estimator and meta learner in the paper, respectively. 
-  2. "core": Contains the training and testing files. Note that we generate score for each frame during the testing.
-  3. "datasets": Contains datasets loading
-  4. "misc": Contains initialization and some preprocessing functions
+  1. "models": Contains the network architectures of proposed Open-Set Defense Network. 
+  2. "advertorch": Contains adversarial attacks such as FGSM and PGD. Thanks the code from: https://github.com/BorealisAI/advertorch
+  3. "OpensetMethods": Contains the open-max function. Thanks the code from: https://github.com/lwneal/counterfactual-open-set
+  4. "datasets": Contains datasets
+  5. "misc": Contains initialization and some preprocessing functions
   
 # Training
 
-To run the main file: python main.py --training_type Train
+To run the train file: python train.py
 
 # Testing
 
-To run the main file: python main.py --training_type Test
+To run the test file: python test.py
 
-It will generate a .h5 file that contains the score for each frame. Then, we use these scores to calculate the AUC and HTER.
+It will generate txt file that contains the score for close-set accracy and AUROC.
 
 # Acknowledge
 Please kindly cite this paper in your publications if it helps your research:
 ```
-@InProceedings{Shao_2020_AAAI,
-author = {Shao, Rui and Lan, Xiangyuan and Yuen, Pong C.},
-title = {Regularized Fine-grained Meta Face Anti-spoofing},
-booktitle = {Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI)},
+@InProceedings{Shao_2020_ECCV,
+author = {Shao, Rui and Perera, Pramuditha and Yuen, Pong C and Patel, Vishal M.},
+title = {Open-set Adversarial Defense},
+booktitle = {European Conference on Computer Vision (ECCV},
 year = {2020}
 }
 ```
