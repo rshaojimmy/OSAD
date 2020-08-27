@@ -37,7 +37,7 @@ It will generate .txt file that contains the score for close-set accuracy and AU
 # Acknowledge
 Please kindly cite this paper in your publications if it helps your research:
 ```
-@InProceedings{Shao_2020_ECCV,
+@InProceedings{Shao_2020_OSAD,
 author = {Shao, Rui and Perera, Pramuditha and Yuen, Pong C and Patel, Vishal M.},
 title = {Open-set Adversarial Defense},
 booktitle = {European Conference on Computer Vision (ECCV)},
