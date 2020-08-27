@@ -40,7 +40,7 @@ Please kindly cite this paper in your publications if it helps your research:
 @InProceedings{Shao_2020_ECCV,
 author = {Shao, Rui and Perera, Pramuditha and Yuen, Pong C and Patel, Vishal M.},
 title = {Open-set Adversarial Defense},
-booktitle = {European Conference on Computer Vision (ECCV},
+booktitle = {European Conference on Computer Vision (ECCV)},
 year = {2020}
 }
 ```
