@@ -14,7 +14,7 @@ Network structure of the proposed Open-Set Defense Network (OSDN). It consists o
 
 # Setup
 
-* Prerequisites: Python3.6, pytorch=1.2, Numpy, TensorboardX, Pillow, SciPy, h5py, libmr
+* Prerequisites: Python3.6, pytorch=1.2, Numpy, libmr
 
 * The source code folders:
 
