@@ -10,7 +10,7 @@ Thus this paper proposes a new research problem named Open-Set Adversarial Defen
 
 Network structure of the proposed Open-Set Defense Network (OSDN). It consists of four components: encoder, decoder, open-set classiﬁer and transformation classifier.
 
-<img src="./models/framework.png" width="900">
+<img src="./models/framework.png" width="800">
 
 # Setup
 
@@ -19,8 +19,8 @@ Network structure of the proposed Open-Set Defense Network (OSDN). It consists o
 * The source code folders:
 
   1. "models": Contains the network architectures of proposed Open-Set Defense Network. 
-  2. "advertorch": Contains adversarial attacks such as FGSM and PGD. Thanks the code from: https://github.com/BorealisAI/advertorch
-  3. "OpensetMethods": Contains the open-max function. Thanks the code from: https://github.com/lwneal/counterfactual-open-set
+  2. "advertorch": Contains adversarial attacks such as FGSM and PGD. Thanks the codes from: https://github.com/BorealisAI/advertorch
+  3. "OpensetMethods": Contains the open-max function. Thanks the codes from: https://github.com/lwneal/counterfactual-open-set
   4. "datasets": Contains datasets
   5. "misc": Contains initialization and some preprocessing functions
   
@@ -32,7 +32,7 @@ To run the train file: python train.py
 
 To run the test file: python test.py
 
-It will generate txt file that contains the score for close-set accracy and AUROC.
+It will generate .txt file that contains the score for close-set accuracy and AUROC.
 
 # Acknowledge
 Please kindly cite this paper in your publications if it helps your research:
