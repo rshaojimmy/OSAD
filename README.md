@@ -45,4 +45,4 @@ year = {2020}
 }
 ```
 
-Contact: ruishao@comp.hkbu.edu.hk
+Contact: rshaojimmy@gmail.com
