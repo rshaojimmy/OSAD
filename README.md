@@ -37,11 +37,13 @@ It will generate .txt file that contains the score for close-set accuracy and AU
 # Acknowledge
 Please kindly cite this paper in your publications if it helps your research:
 ```
-@InProceedings{Shao_2020_OSAD,
-author = {Shao, Rui and Perera, Pramuditha and Yuen, Pong C and Patel, Vishal M.},
-title = {Open-set Adversarial Defense},
-booktitle = {European Conference on Computer Vision (ECCV)},
-year = {2020}
+@article{shao2022open,
+  title={Open-set Adversarial Defense with Clean-Adversarial Mutual Learning},
+  author={Shao, Rui and Perera, Pramuditha and Yuen, Pong C and Patel, Vishal M},
+  journal={International Journal of Computer Vision},
+  pages={1--18},
+  year={2022},
+  publisher={Springer}
 }
 ```
 
